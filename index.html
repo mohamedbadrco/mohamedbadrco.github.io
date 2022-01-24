@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <style>
+    @import url("https://use.typekit.net/jmk3xov.css");
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
+
+    :root {
+      --dark-bg: rgba(15, 15, 15, 0.95);
+      --spacing: 350px;
+
+      font-family: brandon-grotesque, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+
+    main {
+      width: 100vw;
+      color: white;
+      z-index: 99;
+      position: absolute;
+      width: 100%;
+      margin: 0px auto;
+      padding: 120px 0px;
+      overflow: hidden;
+
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+
+    h1,
+    h2,
+    h3,
+    blockquote {
+      font-family: elevon, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    header {
+      background: transparent;
+      grid-column: 2 / span 5;
+      font-size: 2.5rem;
+      padding: 2rem;
+      margin-bottom: var(--spacing);
+
+    }
+    a{
+      background: linear-gradient(to right, #ADD8E6,#0096FF);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      font-size: 1.5rem;
+    }
+
+    section {
+      grid-column: 2 / 8;
+      padding: 1rem;
+      background: rgb(9, 121, 9);
+      background: linear-gradient(90deg, rgba(9, 121, 9, 0.3419702353597689) 26%, rgba(0, 212, 255, 1) 70%);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-bottom: var(--spacing);
+    }
+
+    blockquote {
+      margin: 0;
+      padding: 0;
+      grid-column: 2 / span 9;
+      margin-bottom: var(--spacing);
+
+
+    }
+
+    .g-t {
+      background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+
+    blockquote p {
+      color: black;
+      background-color: white;
+      font-size: 4rem;
+      display: inline;
+      line-height: 1;
+      background: rgb(9, 9, 121);
+      background: linear-gradient(90deg, rgba(9, 9, 121, 1) 26%, rgba(0, 212, 255, 1) 70%);
+    }
+
+    .left {
+      grid-column: 6 / 12;
+    }
+
+    img {
+      grid-column: 2 / 8;
+      padding: 1rem;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: var(--spacing);
+    }
+  </style>
+  <title>Mohamed's webpage </title>
+
+</head>
+
+<body>
+
+  <canvas id="bg"></canvas>
+
+  <main>
+
+    <header>
+      <h1 class="g-t">Mohamed Badr</h1>
+      <p class="g-t"> Welcome to my website!</p>
+    </header>
+
+
+    <blockquote>
+      <p>I like making stuff and putting it on the internet</p>
+    </blockquote>
+
+    <section>
+      <h2>📜 Manifesto</h2>
+      <p>
+        Hello
+        <br>I’m Mohamed Badreldin Ibrahim Ali
+      </p>
+
+      <p>
+        i'm a Full stack web Developer , i work main with python and Java script , my past work was on frame works like
+        Django , React ,React Native and vue.js , i also did some mobile app developing using Dart and flutter
+      </p>
+      <p>
+        web developer with a flair for creating elegant solutions in the least amount of time. Developed an ecommerce
+        webapp, customer web portal. Passionate about software architecture and cloud computing. Regular attendee of web
+        developer meetups and hackathons.
+      </p>
+
+      <p> Contact at
+        <br>(+249)996667314
+        <br> mohamedbadrco@gmail.COM
+        <br> <a href="http://www.linkedin.com/in/mohamed-ali-bb92b422b/">Linked in</a>
+      </p>
+
+    </section>
+
+    <section class="light">
+      <h2> Projects</h2>
+
+      <p> an ecommerce site using django aas back end , an email app using Django in thr back end and javeScript in
+        front end using api to query date, a Socie Network app like twitter using also Django and JavaScript,Also this
+        proflio using HTML ,CSS, and javeScript and threejs library<br>
+
+         you can find all these projects in my <a href="https://github.com/mohamedbadrco"> github account </a> </p>
+
+      <h2> Accomplishments</h2>
+      <p>
+       join One Million Arab Coders Challenge in 2017 , join CS50X class in 2021 and earn CS50X certificates in 2022,
+        join CS50WEb class in 2021 and earn CS50WEB certificates in 2022 , 
+      </p>
+
+    </section>
+
+    <img src="CS50x.png" width="800" alt="CS50x">
+
+    <blockquote>
+      <p>The best way out is always through <br>-Robert Frost</p>
+    </blockquote>
+
+    <section class="left">
+      <h2> Work History</h2>
+
+      <h3> Microfinance unit  - an intern</h3>
+      <h4> accounting and costumer serves , working with exel and larg databases ,
+      </h4>
+
+      <h3>independent contractor- Documant Editing</h3>
+      <h4>
+        Editing document , Drawing graphics , Checking spelling, Formating documents 
+      </h4>
+      
+      <h3>independent contractor- Construction work </h3>
+
+      <h3> Freelance</h3>
+          <h4>Fiverr </h4>
+            <p>making websites and webpags for fix price</p>
+
+    </section>
+
+    <section >
+      <h2> skills</h2>
+      <p>  Python, JavaScript, PHP, Ruby, SQL, TypeScript, React, Django, RactNative, 
+        Ruby on rails, vuejs, Nodejs, Dart and flutter, MySQL ,GitHub , CSS , RUST APIs ,Bootstrap, Ruby
+         User Interface (UI), Application Development , HTML5 , JSON , Java</p>
+      </section>
+
+
+    <blockquote>
+      <p>Thanks for Visting!</p>
+    </blockquote>
+
+
+  </main>
+
+  <script type="module">
+    import * as THREE from 'https://cdn.skypack.dev/three';
+
+    import { OrbitControls } from 'https://cdn.skypack.dev/three/examples/jsm/controls/OrbitControls.js';
+
+    // Setup
+
+    const scene = new THREE.Scene();
+
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+    const renderer = new THREE.WebGLRenderer({
+      canvas: document.querySelector('#bg'),
+    });
+
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    camera.position.setZ(30);
+    camera.position.setX(-3);
+
+    renderer.render(scene, camera);
+
+    var material_b = new THREE.ShaderMaterial({
+      uniforms: {
+        color1: {
+          value: new THREE.Color("red")
+        },
+        color2: {
+          value: new THREE.Color("purple")
+        }
+      },
+      vertexShader: `
+    varying vec2 vUv;
+
+    void main() {
+      vUv = uv;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0);
+    }
+  `,
+      fragmentShader: `
+    uniform vec3 color1;
+    uniform vec3 color2;
+  
+    varying vec2 vUv;
+    
+    void main() {
+      
+      gl_FragColor = vec4(mix(color1, color2, vUv.y), 1.0);
+    }
+  `,
+      wireframe: true
+    });
+
+    // Torus
+
+    const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
+    const torus = new THREE.Mesh(geometry, material_b);
+
+    scene.add(torus);
+
+    // Lights
+
+    const pointLight = new THREE.PointLight(0xffffff);
+    pointLight.position.set(5, 5, 5);
+
+    const ambientLight = new THREE.AmbientLight(0xffffff);
+    scene.add(pointLight, ambientLight);
+
+    function addStar() {
+      const geometry = new THREE.SphereGeometry(0.25, 24, 24);
+      const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
+      const star = new THREE.Mesh(geometry, material);
+
+      const [x, y, z] = Array(3)
+        .fill()
+        .map(() => THREE.MathUtils.randFloatSpread(100));
+
+      star.position.set(x, y, z);
+      scene.add(star);
+    }
+
+    Array(200).fill().forEach(addStar);
+
+
+    const box = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), material_b);
+
+    scene.add(box);
+
+    box.position.z = -5;
+    box.position.x = 2;
+
+    // Scroll Animation
+
+    function moveCamera() {
+      const t = document.body.getBoundingClientRect().top;
+
+      camera.position.z = t * -0.005;
+      camera.position.x = t * -0.0001;
+      camera.rotation.y = t * -0.0001;
+    }
+
+    document.body.onscroll = moveCamera;
+    moveCamera();
+
+    // Animation Loop
+
+    function animate() {
+      requestAnimationFrame(animate);
+
+      torus.rotation.x += 0.01;
+      torus.rotation.y += 0.005;
+      torus.rotation.z += 0.01;
+
+
+      // controls.update();
+
+      renderer.render(scene, camera);
+    }
+
+    animate();
+  </script>
+
+
+</body>
+
+</html>
