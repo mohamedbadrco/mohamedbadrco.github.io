@@ -398,6 +398,18 @@ Conceptualized , Developed and Designed by me
     }
 
     animate();
+  window.addEventListener('scroll', () => {
+  const scrollPosition = window.scrollY;
+  const section1 = document.querySelector('.section-1');
+  const section2 = document.querySelector('.section-2');
+
+  // Calculate a percentage based on scroll position
+  const percentage = (scrollPosition / (section2.offsetTop - section1.offsetHeight)) * 100;
+
+  // Update background color of sections based on percentage
+  section.style.Color = `rgba(0, 0, 0, ${percentage / 100})`;
+  section.style.backgroundColor = `rgba(255, 255, 255, ${(100 - percentage) / 100})`;
+});
   </script>
 
 
