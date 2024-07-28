@@ -132,7 +132,10 @@
     }
 @media only screen and (max-width: 576px) { /* Adjust breakpoint as needed */
   
-  .header, /* Add specific divs if needed for adjustments */
+  .header {
+    grid-column: 1 / span 12; /* Override for specific divs */
+  }
+  
   .section,
   .blockquote,
   .img,
