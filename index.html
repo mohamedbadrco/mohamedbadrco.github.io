@@ -130,16 +130,17 @@
       height: auto;
       margin-bottom: var(--spacing);
     }
- @media only screen and (max-width: 576px) { /* Adjusted breakpoint (optional) */
-      main {
-        width: 100vw;
-        color: white;
-        z-index: 99;
-        position: absolute;
-        width: 100%;
-        margin: 0px auto;
-        padding: 12px 0px;
-      }
+@media only screen and (max-width: 576px) { /* Adjust breakpoint as needed */
+  
+  .header, /* Add specific divs if needed for adjustments */
+  .section,
+  .blockquote,
+  .img,
+  .left,
+  .leftimg {
+    grid-column: 1 / span 12; /* Override for specific divs */
+  }
+}
 }
   </style>
   <title> mo_-badr </title>
