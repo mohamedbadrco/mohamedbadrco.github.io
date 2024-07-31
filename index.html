@@ -360,18 +360,18 @@ Conceptualized , Developed and Designed by me
 
     const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
     // Function to generate random noise
-function generateNoise(amplitude) {
-  return Math.random() * amplitude - amplitude / 2;
-}
+// function generateNoise(amplitude) {
+//   return Math.random() * amplitude - amplitude / 2;
+// }
 
 // Access vertices and apply noise
 const vertices = geometry.attributes.position.array;
 const lenv = vertices.length
 for (let i = 0; i < lenv; i += 3) {
-  const vertex = vertices[i];
-  vertex[i] += generateNoise(0.5);
-  vertex[i+1] += generateNoise(0.5);
-  vertex[i+2] += generateNoise(0.5);
+ // const vertex = vertices[i];
+  vertices[i] += Math.random() * 0.1;
+  vertices[i+1] += Math.random() * 0.1;
+  vertices[i+2] += Math.random() * 0.1;
 }
 
 // Update geometry
