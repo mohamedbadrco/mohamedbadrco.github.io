@@ -369,9 +369,9 @@ const vertices = geometry.attributes.position.array;
 const lenv = vertices.length
 for (let i = 0; i < lenv; i += 3) {
  // const vertex = vertices[i];
-  vertices[i] += Math.random() * 1.5;
-  vertices[i+1] += Math.random() * 1.5;
-  vertices[i+2] += Math.random() * 1.5;
+  vertices[i] += Math.random() * Math.random() * 0.5;
+  vertices[i+1] += Math.random() * Math.random() * 0.5;
+  vertices[i+2] += Math.random() * Math.random() * 0.5; 
 }
 
 // Update geometry
