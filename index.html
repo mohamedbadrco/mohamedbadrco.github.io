@@ -365,7 +365,7 @@ function generateNoise(amplitude) {
 }
 
 // Access vertices and apply noise
-const vertices = geometry.vertices;
+const vertices = geometry.attributes.position.array.vertices;
 for (let i = 0; i < vertices.length; i++) {
   const vertex = vertices[i];
   vertex.x += generateNoise(0.5);
