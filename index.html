@@ -365,19 +365,19 @@ Conceptualized , Developed and Designed by me
 // }
 
 // Access vertices and apply noise
-const vertices = geometry.attributes.position.array;
-const lenv = vertices.length
-for (let i = 0; i < lenv; i += 3) {
- // const vertex = vertices[i];
-  if ((Math.random()/2) > Math.random() ){
-  vertices[i] += Math.random() * 2.5;
-  vertices[i+1] += Math.random() * 2.5;
-  vertices[i+2] += Math.random() * 2.5; 
-    }
-}
+// const vertices = geometry.attributes.position.array;
+// const lenv = vertices.length
+// for (let i = 0; i < lenv; i += 3) {
+//  // const vertex = vertices[i];
+//   if ((Math.random()/2) > Math.random() ){
+//   vertices[i] += Math.random() * 2.5;
+//   vertices[i+1] += Math.random() * 2.5;
+//   vertices[i+2] += Math.random() * 2.5; 
+//     }
+// }
 
-// Update geometry
-geometry.attributes.position.needsUpdate = true;
+// // Update geometry
+// geometry.attributes.position.needsUpdate = true;
     const torus = new THREE.Mesh(geometry, material_p);
 
     scene.add(torus);
