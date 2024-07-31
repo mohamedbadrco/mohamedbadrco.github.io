@@ -367,15 +367,15 @@ function generateNoise(amplitude) {
 // Access vertices and apply noise
 const vertices = geometry.attributes.position.array;
 const lenv = vertices.length
-for (let i = 0; i < lenv; i++) {
+for (let i = 0; i < lenv; i += 3) {
   const vertex = vertices[i];
-  vertex.x += generateNoise(0.5);
-  vertex.y += generateNoise(0.5);
-  vertex.z += generateNoise(0.5);
+  vertex[i] += generateNoise(0.5);
+  vertex[i+1] += generateNoise(0.5);
+  vertex[i+2] += generateNoise(0.5);
 }
 
 // Update geometry
-geometry.verticesNeedUpdate = true;
+geometry.attributes.position.needsUpdate = true;
     const torus = new THREE.Mesh(geometry, material_p);
 
     scene.add(torus);
