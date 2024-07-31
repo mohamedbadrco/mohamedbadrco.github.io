@@ -359,6 +359,22 @@ Conceptualized , Developed and Designed by me
     // Torus
 
     const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
+    // Function to generate random noise
+function generateNoise(amplitude) {
+  return Math.random() * amplitude - amplitude / 2;
+}
+
+// Access vertices and apply noise
+const vertices = geometry.vertices;
+for (let i = 0; i < vertices.length; i++) {
+  const vertex = vertices[i];
+  vertex.x += generateNoise(0.5);
+  vertex.y += generateNoise(0.5);
+  vertex.z += generateNoise(0.5);
+}
+
+// Update geometry
+geometry.verticesNeedUpdate = true;
     const torus = new THREE.Mesh(geometry, material_p);
 
     scene.add(torus);
